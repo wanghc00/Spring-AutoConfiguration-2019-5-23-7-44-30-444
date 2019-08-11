@@ -1,14 +1,17 @@
 package com.zhengdianfang.demo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class User {
-
+    @Value("${name}")
     private String username;
-
+    
+    @Value("${age}")
     private int age;
-
+    
+    @Value("${address}")
     private String address;
 
     public String getUsername() {
